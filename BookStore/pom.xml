@@ -5,11 +5,7 @@
 	<artifactId>BookStore</artifactId>
 	<version>0.0.1</version>
 	<packaging>war</packaging>
-<<<<<<< HEAD
-4
-=======
-3
->>>>>>> branch 'dev_tom' of https://github.com/TomZhangY/SpringMybatis.git
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
