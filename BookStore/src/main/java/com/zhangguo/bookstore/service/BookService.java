@@ -35,7 +35,9 @@ public class BookService{
 	public int add(Book entity1,Book entityBak){
 		int rows=0;
 		rows=bookdao.add(entity1);
+		System.out.println("rows1="+rows);
 		rows=bookdao.add(entityBak);
+		System.out.println("rows2="+rows);
 		return rows;
 	}
 
