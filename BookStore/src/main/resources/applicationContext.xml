@@ -36,9 +36,9 @@
 		<!-- 连接池中连接最大个数 -->
 		<property name="maxPoolSize" value="20"></property>
 	</bean>
-	
 	<!--3 会话工厂bean sqlSessionFactoryBean -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="configLocation" value="classpath:mybatis-config.xml"></property>
 	    <!-- 数据源 -->
 	    <property name="dataSource" ref="datasource"></property>
 	    <!-- 别名 -->

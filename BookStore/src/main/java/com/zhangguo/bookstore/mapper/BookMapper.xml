@@ -4,11 +4,11 @@
 <mapper namespace="com.zhangguo.bookstore.mapper.BookDAO">
 	<!--id应该是接口中的方法，结果类型如没有配置别名则应该使用全名称 -->
 	<!--获得所有图书 -->
-	<select id="getAllBooks" resultType="Book">
+	<select id="getAllBooks" resultType="book">
 		select id,title,price,publishDate from books
 	</select>
 	<!--获得图书对象通过编号 -->
-	<select id="getBookById" resultType="Book">
+	<select id="getBookById" resultType="book">
 		select id,title,price,publishDate from books where id=#{id}
 	</select>
 	<!-- 增加 -->

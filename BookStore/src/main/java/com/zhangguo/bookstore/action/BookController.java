@@ -1,13 +1,10 @@
 package com.zhangguo.bookstore.action;
 
-import java.io.IOException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -27,8 +24,9 @@ public class BookController extends BaseController {
 
 	// 图书列表Action
 	public String ListBook(HttpServletRequest request, HttpServletResponse response) {
-		request.setAttribute("books", bookservice.getAllBooks());
-		return "ListBook.jsp";
+//		request.setAttribute("books", bookservice.getAllBooks());
+		System.out.println("123");
+		return "index.jsp";
 	}
 
 	// 删除图书Action

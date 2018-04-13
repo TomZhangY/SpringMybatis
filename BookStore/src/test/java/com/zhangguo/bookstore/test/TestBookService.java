@@ -23,6 +23,7 @@ public class TestBookService {
 	@Test
 	public void testGetAllBooks() {
 		List<Book> books=bookservice.getAllBooks();
+		System.out.println(books);
 		assertNotNull(books);
 	}
 

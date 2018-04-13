@@ -2,6 +2,8 @@ package com.zhangguo.bookstore.entities;
 
 import java.util.Date;
 
+import org.apache.ibatis.type.Alias;
+
 /**
  * 图书实体
  */
@@ -64,4 +66,10 @@ public class Book {
 	public void setPublishDate(Date publishDate) {
 		this.publishDate = publishDate;
 	}
+	
+	@Override
+	public String toString() {
+		return "Book [id=" + id + ", title=" + title + ", price=" + price + ", publishDate=" + publishDate + "]";
+	}
+
 }
